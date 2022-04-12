@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  max-height: 100%;
+  background-color: #222;
+  /* background: url("https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MTMyNzg3MQ&ixlib=rb-1.2.1&q=85") no-repeat; */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  /*Полосы прокрутки контентной части*/
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.content {
+  margin: 0 auto;
+  width: 1200px;
+  max-width: 100%;
+  padding: 10px 5px;
+
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+}
+
+.box-inner {
+  margin: 0 auto;
+  width: 800px;
+  max-width: 100%;
+  max-height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.title {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Teko", sans-serif;
+}
+
+.box-form {
+  max-width: 100%;
+  margin: 5px;
+  padding: 20px;
+  /* border: 1px solid #fff; */
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.message {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: none;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+.message:focus {
+  outline: 0;
+}
+.message::placeholder {
+  color: #fff;
+}
+
+.add {
+  width: 150px;
+  border: none;
+  border-radius: 2px;
+  padding: 5px 10px;
+  background: #4d46bb;
+  color: #fff;
+  cursor: pointer;
+}
+
+.add:hover {
+  background: green;
+  color: #000;
+}
+
+.box-todolist {
+  margin: 0 auto;
+  width: 800px;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 10px;
+}
+
+.tasks-today {
+  text-align: center;
+  color: #fff;
+}
+
+.todo {
+  width: 800px;
+  max-width: 100%;
+  max-height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  list-style: none;
+  color: #fff;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+/* .todo li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.contents {
+  width: 100%;
+}
+
+.text {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+
+.text:focus {
+  outline: 0;
+}
+.text::placeholder {
+  color: #fff;
+}
+
+
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.label-style {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  text-align: justify;
+}
+
+/*Стили при нажатии правой кнопкой мыши*/
+.done {
+  font-weight: regular;
+  color: green;
+  text-decoration: line-through;
+}
+/*Кнопки*/
+.btn-box {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.btn-todo-list-edit {
+  border: none;
+  border-radius: 2px;
+  background: #4d46bb;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  color: #fff;
+  /* margin-bottom: 10px; */
+}
+.btn-todo-list-edit:hover {
+  background: orange;
+  color: #000;
+}
+
+.btn-todo-list-del {
+  border: none;
+  border-radius: 2px;
+  background: #4d46bb;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  color: #fff;
+  /* margin-bottom: 10px; */
+}
+
+.btn-todo-list-del:hover {
+  background: #B22222;
+  color: #000;
+}
